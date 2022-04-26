@@ -2,6 +2,7 @@
 
 /* Código para la parte del cuerpo y algunos elementos como h1, h2, etc */
 body {
+
     display: block;
     font-family: 'Lobster', cursive;
     font-family: 'Open Sans', sans-serif;
@@ -9,20 +10,18 @@ body {
     font-weight: 800;
     line-height: 1;
     color: black;
-  }
-  
-  h1 {
 
-    font-weight: 800;
+}
+  
+h1, h2 { 
+
     text-align: center;
     font-family: 'Lobster', cursive;
     font-family: 'Open Sans', sans-serif;
-    
-  }
-  
-  h1 {
     font-size: 88px;
-  }
+    font-weight: 800;  
+
+}
 
 /* Código del menú de navegación */
 .nav {
@@ -41,6 +40,7 @@ body {
 
     display: flex;
     margin-right: 2rem;
+
 }
 
 .menu-nav li {
@@ -55,11 +55,13 @@ body {
     font-size: 36px;
     padding: 14px;
     text-decoration: none;
+
 }
 
 
 /* Código para la sección de bienvenida */
 #welcome-section {
+
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -69,13 +71,73 @@ body {
     height: 35em;
     background-color: rgb(170, 35, 35);
     
-  }
+}
   
 #welcome-section > p {
+
     font-size: 40px;
     font-weight: 500;
     font-style: italic;
     font-family: 'Open Sans', sans-serif;
     color: black;
+
+}
+  
+
+/* Código para la sección de los proyectos */
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background: blue;
   }
   
+#projects header {
+    font-size: 50px;
+    color: white;
+    max-width: 640px;
+    margin: 0 auto 100px auto;
+    border-bottom: 3px solid white;
+  }
+
+.grid-container {
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 80px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #2196F3;
+    padding: 10px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+  }
+
+.grid-container img {
+      width: 550px;
+      height: 450px;
+      border-radius: 4px;
+}
+
+.project-title {
+
+    background-color: gray;
+    transition: color 0.3s ease-out;
+  }
+
+@media (max-width: 1280px) {
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container img {
+        width: 275px;
+        height: 225px;
+    }
+}
