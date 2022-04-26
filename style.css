@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap');
+
+/* Código para la parte del cuerpo y algunos elementos como h1, h2, etc */
+body {
+    display: block;
+    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    color: black;
+  }
+  
+  h1 {
+
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
+    
+  }
+  
+  h1 {
+    font-size: 88px;
+  }
+
+/* Código del menú de navegación */
+.nav {
+
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+  
+.menu-nav {
+
+    display: flex;
+    margin-right: 2rem;
+}
+
+.menu-nav li {
+
+    list-style-type: none;
+      
+}
+
+.menu-nav a {
+
+    display: block;
+    font-size: 36px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+/* Código para la sección de bienvenida */
+#welcome-section {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35em;
+    background-color: rgb(170, 35, 35);
+    
+  }
+  
+#welcome-section > p {
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+  }
+  
