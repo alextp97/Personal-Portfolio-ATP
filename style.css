@@ -19,7 +19,8 @@ h1, h2 {
     font-family: 'Lobster', cursive;
     font-family: 'Open Sans', sans-serif;
     font-size: 88px;
-    font-weight: 800;  
+    font-weight: 800;
+    color: white;  
 
 }
 
@@ -32,7 +33,7 @@ h1, h2 {
     top: 0;
     left: 0;
     width: 100%;
-    background: red;
+    background: #C33930;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
   
@@ -55,6 +56,7 @@ h1, h2 {
     font-size: 36px;
     padding: 14px;
     text-decoration: none;
+    color: white;
 
 }
 
@@ -69,29 +71,30 @@ h1, h2 {
     align-items: center;
     width: 100%;
     height: 35em;
-    background-color: rgb(170, 35, 35);
+    background-color: #505050;
     
 }
   
 #welcome-section > p {
 
+    text-align: center;
     font-size: 40px;
     font-weight: 500;
     font-style: italic;
     font-family: 'Open Sans', sans-serif;
-    color: black;
+    color: white;
 
 }
   
 
 /* Código para la sección de los proyectos */
-#projects {
+#proyectos {
     text-align: center;
     padding: 50px 20px;
-    background: blue;
+    background: #40567C;
   }
   
-#projects header {
+#proyectos header {
     font-size: 50px;
     color: white;
     max-width: 640px;
@@ -100,13 +103,7 @@ h1, h2 {
   }
 
 .grid-container {
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    column-gap: 80px;
-    row-gap: 50px;
-    grid-template-columns: 1fr 1fr;
-    background-color: #2196F3;
-    padding: 10px;*/
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-columns: 1fr 1fr;
@@ -114,7 +111,7 @@ h1, h2 {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 130px;
   }
 
 .grid-container img {
@@ -124,7 +121,7 @@ h1, h2 {
       border-top-right-radius: 4px;
 }
 
-.project-title {
+.titulo-proyecto {
 
     width: 550px;
     height: 30px;
@@ -132,10 +129,104 @@ h1, h2 {
     margin-left: 32px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: gray;
+    background-color: #505050;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-  }
+    color: white;
+}
+
+.btn-vertodos {
+
+    display: inline-block;
+    width: 10%;
+    align-items: center;
+    background: #505050;
+    padding: 20px 20px;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Código para la parte de contactar */
+#contacto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 580px;
+    padding: 0 2rem;
+    background: #505050;
+}
+
+#contacto > h3 {
+
+    font-size: 54px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#contacto > p {
+
+    margin-top: 10px;
+    font-size: 28px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.sitio-contacto {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 820px;
+    margin-top: 3%;
+
+}
+
+#profile-link {
+    font-size: 24px;
+    margin-right: 10%;
+    color: white;
+}
+
+#profile-link > i {
+    margin-right: 7px;
+}
+
+
+/* Código CSS de la parte del Footer */
+footer {
+    
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 200;
+    border-top: 3px solid #C33930;
+    background-color: #40567C;
+
+}
+  
+footer > p {
+    margin: 2%;
+    color: white;
+}
+
+footer  a {
+    color: white;
+}
+  
+footer i {
+    vertical-align: middle;
+}
+  
 
 
 /* Código para que todas las imágenes y botones se ajusten a una pantalla más pequeña */
@@ -144,10 +235,32 @@ h1, h2 {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
+        margin-bottom: 200px;
     }
 
     .grid-container img {
         width: 275px;
         height: 225px;
     }
+
+    .titulo-proyecto {
+        width: 64.5%;
+        margin-left: 17.8%;
+    }
+
+    .btn-vertodos {
+
+        width: auto;
+    }
+
+    .menu-nav a {
+        font-size: 22px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
+
